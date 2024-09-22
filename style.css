@@ -1,0 +1,129 @@
+*{    /*Seleciona todos os elementos na página.*/     
+    margin: 0; /*Remove a margem e o preenchimento(padding) padrão de todos os elementos, garantindo um layout mais previsível.*/
+    padding: 0;
+    box-sizing: border-box; /* Faz com que a largura e a altura dos elementos incluam o padding e a borda, facilitando o controle de dimensões.*/
+}
+
+body{
+     font-family: Arial, Helvetica, sans-serif; /*Define a fonte a ser utilizada na página.
+    line-height: 1.6; /*Define a altura da linha, melhorando a legibilidade.*/
+    background-color: #f9f9f9; /*Define a cor de fundo do corpo da página.*/
+}
+
+nav{
+    position: fixed; /*Faz com que a barra de navegação fique fixa no topo da página, mesmo ao rolar.*/
+    top: 0;
+    width: 100%;
+    background: #3333338c; /*algumacor;*/
+    padding: 20px 0; /* Adiciona espaço interno na barra.*/
+}
+
+nav ul{
+    list-style-type: none; /*Remove os marcadores das listas.*/
+    display: flex; /*Utiliza o modelo de caixa flexível para organizar os itens em linha.*/
+    justify-content: center; /*Centraliza os itens da lista.*/
+}
+
+nav ul li{
+    margin: 0 20px; /*: Adiciona espaço entre os itens da lista.*/
+}
+
+nav ul li a{
+    color:white; /*Define a cor do texto dos links.*/
+    text-decoration:none ; /*Remove o sublinhado dos links.*/
+    font-size: 18px; /*Define o tamanho da fonte.*/
+    padding: 10px; /*Adiciona espaço ao redor do texto do link.*/
+    transition: color 0.3s; /* Cria uma transição suave para a mudança de cor.*/
+
+}
+
+nav ul li a:hover{ /* Muda a cor do link quando o mouse passa por cima, oferecendo feedback visual.*/
+    color:#ff6347;
+}
+
+section:not(#home){ /* Aplica estilos a todas as seções, exceto a de ID home*/ 
+    padding: 100px 20px; /* Adiciona espaço interno nas seções.*/
+    text-align: center; /*Centraliza o texto.*/
+    display: flex; /*Centraliza o conteúdo vertical e horizontalmente.*/
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Define a altura da seção como 100% da altura da janela de visualização.*/
+
+}
+
+#home{
+    /*background color: #4a90e2; */
+    background-image: url(https://cdn.pixabay.com/photo/2018/09/03/23/56/sea-3652697_1280.jpg); /*Define uma imagem de fundo.*/
+    background-size: cover; /*Faz com que a imagem cubra toda a área disponível.*/
+    background-repeat: no-repeat; /* Impede a repetição da imagem.*/
+    color: rgb(0,0,0); /*Define a cor do texto.*/
+    height: 100vh;
+    text-align: center;
+    display:flex;             
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*Estilos similares aos explicados anteriormente, mas ajustados para o layout da seção home.*/
+    font-size: 1.5em; /*Define o tamanho da fonte na seção.*/
+}
+
+.content{
+    display: flex; /*Utiliza o modelo de caixa flexível para organizar os itens em linha.*/ 
+    flex-direction: row; /*Organiza os elementos em linha horizontal.*/
+    align-items: center;
+    justify-content: center;
+    /* Estes dois últimos elementos centralizam o conteúdo.*/
+}
+
+
+.content img{
+    width: 400px;
+    height: 300px;
+    /*Os dois elementos acima definem as dimensões da imagem.*/
+    object-fit: cover; /*Faz com que a imagem preencha o espaço, mantendo a proporção.*/
+    margin-right: 20px; /* Adiciona espaço à direita da imagem*/
+    border-radius: 8px; /*Arredonda os cantos da imagem.*/
+
+}
+
+.content .text{
+    max-width: 600px; /*Limita a largura do texto.*/
+    text-align: left; /*Alinha o texto à esquerda.*/
+}
+
+.content .text h2{
+    font-size: 2em; /*Define o tamanho do título.*/
+    margin-bottom: 20px; /*Adiciona espaço abaixo do título.*/
+    color: #333; /*Define a cor do título.*/
+}
+
+.content .text p{
+    font-size: 1.1em; /* Define o tamanho do texto do parágrafo.*/
+    color: #555; /*Define a cor do texto do parágrafo.*/
+}
+
+#services{
+    background-color: #ffffff;
+}
+
+#about{
+    background-color: #EAEAEA;
+}
+
+#contact{
+    background-color: #ffffff;
+}
+/*Define a cor de fundo para cada uma das seções*/
+
+.cta-button{
+    margin-top: 30px; /*Adiciona espaço acima do botão.*/
+    background-color: #89ff29; /*Define a cor de fundo do botão.*/
+    color: rgb(0,0,0); /*Define a cor do texto do botão.*/
+    padding: 15px 30px; /*Adiciona espaço interno ao botão.*/
+    font-size: 18px; /*Define o tamanho da fonte do texto no botão.*/ 
+    border: none; /* Remove a borda padrão do botão.*/
+    border-radius: 15px; /*Arredonda os cantos do botão.*/
+    cursor: pointer; /*Muda o cursor para indicar que é clicável.*/ 
+    box-shadow: 0px 4px rgba(0,0,0,0.1); /*: Adiciona uma sombra ao botão.*/
+    transition: background-color 1s ease, transform 1s ease;
+ } /* Cria animações suaves para mudanças de cor e transformação.*/
